@@ -24,7 +24,7 @@ function Index({ isOpen, setIsOpen, image }) {
       document.body.style.overflow = "auto";
       window.removeEventListener("keydown", handleKeyPress);
     };
-  }, [isOpen, handleKeyPress]);
+  }, [isOpen]);
 
   function closeModal() {
     setIsOpen(false);

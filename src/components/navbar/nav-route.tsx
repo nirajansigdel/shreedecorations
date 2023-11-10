@@ -1,8 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link } from "react-scroll";
+import { usePathname, useRouter } from "next/navigation";
+import { GalleryPopover } from "../gallery-popover";
 
 const navRoutes = [
   {
@@ -12,6 +13,7 @@ const navRoutes = [
   {
     title: "Service",
     href: "/service",
+    label: "service",
   },
   {
     title: "Gallery",
@@ -34,6 +36,12 @@ interface NavRoutesProps {
 }
 export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
   const pathname = usePathname();
+  const router = useRouter();
+
+  const onClick = (name: string, href: string) => {
+    if (name === "Gallery") return;
+    router.push(href);
+  };
 
   return (
     <div
@@ -43,23 +51,58 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
         isFooter && "items-center justify-center"
       )}
     >
-      {navRoutes.map((route) => (
-        <Link
-          href={route.href}
-          key={route.title}
-          className={cn(
-            isNavbar &&
-              "text-gray-600 hover:text-primary transition hover:underline",
-            pathname === route.href && isNavbar && " text-primary underline",
-            isMobile &&
-              " p-2 rounded-md text-center text-gray-600 hover:bg-muted  hover:text-primary transition",
+      {navRoutes.map((route) => {
+        if (route.label === "service")
+          return (
+            <Link
+              role="button"
+              activeClass="active"
+              to={route.label}
+              spy={true}
+              smooth={true}
+              duration={100}
+              className={cn(
+                isNavbar &&
+                  "text-gray-600 hover:text-primary transition hover:underline",
+                pathname === route.href &&
+                  isNavbar &&
+                  " text-primary underline",
+                isMobile &&
+                  " p-2 rounded-md text-center text-gray-600 hover:bg-muted  hover:text-primary transition",
 
-            pathname === route.href && isMobile && "text-primary bg-muted"
-          )}
-        >
-          {route.title}
-        </Link>
-      ))}
+                pathname === route.href && isMobile && "text-primary bg-muted"
+              )}
+            >
+              {" "}
+              {route.title}
+            </Link>
+          );
+
+        return (
+          <div
+            role="button"
+            onClick={() => onClick(route.title, route.href)}
+            key={route.title}
+            className={cn(
+              isNavbar &&
+                "text-gray-600 hover:text-primary transition hover:underline",
+              pathname === route.href && isNavbar && " text-primary underline",
+              isMobile &&
+                " p-2 rounded-md text-center text-gray-600 hover:bg-muted  hover:text-primary transition",
+
+              pathname === route.href && isMobile && "text-primary bg-muted"
+            )}
+          >
+            {route.title === "Gallery" && isNavbar ? (
+              <GalleryPopover key="gallery">
+                <div className="">{route.title}</div>
+              </GalleryPopover>
+            ) : (
+              <>{route.title}</>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 };
