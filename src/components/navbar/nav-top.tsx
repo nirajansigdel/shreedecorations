@@ -29,14 +29,17 @@ const socialMedias = [
   {
     id: 1,
     icon: <BsFacebook className="w-4 h-4 md:w-7 md:h-7" />,
+    link: "https://www.facebook.com/people/Shree-Auspicious-Decoration/61552178642930/?mibextid=LQQJ4d",
   },
   {
     id: 2,
     icon: <AiFillInstagram className="w-5 h-5 md:w-8 md:h-8" />,
+    link: "https://www.facebook.com/people/Shree-Auspicious-Decoration/61552178642930/?mibextid=LQQJ4d",
   },
   {
     id: 3,
     icon: <AiFillYoutube className="w-5 h-5  md:w-8 md:h-8" />,
+    link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
   },
 ];
 
@@ -58,7 +61,7 @@ export const NavTop = () => {
 
         <div className="flex items-center justify-center gap-x-4">
           {socialMedias.map((social) => (
-            <Link href="/" key={social.id} className="">
+            <Link href={social.link} key={social.id} className="">
               {social.icon}
             </Link>
           ))}

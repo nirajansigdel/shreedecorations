@@ -10,16 +10,23 @@ const socialMedias = [
   {
     id: 1,
     icon: <BsFacebook className=" w-6 h-6 md:w-9 md:h-9" />,
+    link: "https://www.facebook.com/people/Shree-Auspicious-Decoration/61552178642930/?mibextid=LQQJ4d",
   },
   {
     id: 2,
     icon: <AiFillInstagram className="w-7 h-7 md:w-10 md:h-10" />,
+    link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
   },
   {
     id: 3,
     icon: <AiFillYoutube className="w-7 h-7 md:w-10 md:h-10" />,
+    link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
   },
-  { id: 4, icon: <FaTiktok className="w-5 h-5 md:w-8 md:h-8" /> },
+  {
+    id: 4,
+    icon: <FaTiktok className="w-5 h-5 md:w-8 md:h-8" />,
+    link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
+  },
 ];
 
 const navRoutes = [
@@ -53,7 +60,7 @@ export const Footer = () => {
         <div className="flex items-center justify-center gap-x-4">
           {socialMedias.map((social) => (
             <Link
-              href="/"
+              href={social?.link}
               key={social.id}
               className="hover:text-red-100 transition"
             >
