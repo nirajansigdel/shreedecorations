@@ -62,7 +62,7 @@ export const Footer = () => {
           ))}
         </div>
 
-        <NavRoutes center=" items-center justify-center" />
+        <NavRoutes isFooter />
       </div>
 
       <div className=" w-full border-b-2 rounded text-white " />

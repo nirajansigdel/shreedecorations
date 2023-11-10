@@ -12,7 +12,7 @@ export const NavMobile = () => {
         <AiOutlineMenu className="w-6 h-6" />
       </SheetTrigger>
       <SheetContent side="left" className=" bg-white flex flex-col  gap-y-10 ">
-        <NavRoutes />
+        <NavRoutes isMobile />
       </SheetContent>
     </Sheet>
   );

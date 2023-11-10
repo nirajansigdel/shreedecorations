@@ -42,25 +42,27 @@ const socialMedias = [
 
 export const NavTop = () => {
   return (
-    <div className="md:h-[70px] bg-primary w-full py-2 mt-4 flex flex-col md:flex-row items-center justify-between px-4 text-white">
-      <div className="flex items-center justify-center gap-x-2 md:gap-x-4">
-        {officeInfos.map((info) => (
-          <div
-            key={info.title}
-            className="flex items-center gap-x-1 text-[10px] md:text-base"
-          >
-            {info.icon}
-            <p className="font-medium truncate md:text base">{info.title}</p>
-          </div>
-        ))}
-      </div>
+    <div className="bg-primary px-6">
+      <div className="hidden md:flex  md:h-[70px]  w-full py-2 mt-4  flex-col md:flex-row items-center justify-between  text-white max-w-[1560px] mx-auto">
+        <div className="flex items-center justify-center gap-x-2 md:gap-x-4">
+          {officeInfos.map((info) => (
+            <div
+              key={info.title}
+              className="flex items-center gap-x-1 text-[10px] md:text-base"
+            >
+              {info.icon}
+              <p className="font-medium truncate md:text base">{info.title}</p>
+            </div>
+          ))}
+        </div>
 
-      <div className="flex items-center justify-center gap-x-4">
-        {socialMedias.map((social) => (
-          <Link href="/" key={social.id} className="">
-            {social.icon}
-          </Link>
-        ))}
+        <div className="flex items-center justify-center gap-x-4">
+          {socialMedias.map((social) => (
+            <Link href="/" key={social.id} className="">
+              {social.icon}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

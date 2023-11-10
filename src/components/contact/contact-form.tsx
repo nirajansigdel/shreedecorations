@@ -46,21 +46,21 @@ export const ContactForm = () => {
         </div>
 
         <button
-          className="w-full text-center font-semibold bg-yellow-400 hover:bg-yellow-500 h py-2 px-4 rounded transition"
+          className="w-full text-center font-semibold bg-primary hover:bg-red-500 h py-2 px-4 rounded transition"
           type="submit"
         >
           Submit
         </button>
       </div>
 
-      <div className="flex flex-col gap-y-6 w-full">
+      <div className="flex flex-col gap-y-6 w-full bg-[#13605C] rounded p-4">
         <p className="text-sm">
           Feel free to connect with us through the contact details provided
           below for any type of enquiry or to establish a connection. We are
           here to assist you in a positive and helpful manner.
         </p>
 
-        <div className="bg-[#E721A3] p-4 flex flex-col gap-y-4 rounded ">
+        <div className="bg-[#004A46] p-4 flex flex-col gap-y-4 rounded ">
           <p className="text-lg font-medium">Contact</p>
           <div className="flex flex-col gap-y-2">
             <ContactInfo
@@ -74,7 +74,7 @@ export const ContactForm = () => {
           </div>
         </div>
 
-        <div className="bg-[#E721A3] p-4 flex flex-col gap-y-4 rounded ">
+        <div className="bg-[#004A46] p-4 flex flex-col gap-y-4 rounded ">
           <p className="text-lg font-medium">Location</p>
           <div className="flex flex-col gap-y-2">
             <ContactInfo

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 interface ServiceCardProps {
   href: string;
@@ -16,9 +17,12 @@ export const ServiceCard = ({ src, title, href }: ServiceCardProps) => {
         <Image src={src} fill objectFit="cover" alt={title} />{" "}
       </div>
 
-      <button className="absolute -bottom-4 left-[50%] ml-[-70px]   px-8 py-2 bg-primary hover:bg-red-600  transition text-white font-semibold rounded-lg  hover:shadow-sm">
+      <Button
+        variant="outline"
+        className="absolute -bottom-4 left-[50%] ml-[-70px]   px-8 py-2  transition font-semibold rounded-lg  hover:shadow-sm"
+      >
         <Link href={href}>{title}</Link>
-      </button>
+      </Button>
     </div>
   );
 };

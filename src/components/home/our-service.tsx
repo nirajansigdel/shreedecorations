@@ -1,16 +1,17 @@
 "use client";
 
-import { Seperator } from "@/components/ui/seperator";
+import { Separator } from "@/components/ui/separator";
 import { ServiceCard } from "./service-card";
 import { services } from "@/lib/services";
+import { Button } from "../ui/button";
 
 export const OurSerive = () => {
   return (
-    <div className=" w-full border-2  border-primary/10 rounded p-4 flex flex-col gap-y-4">
+    <div className=" w-full border-2  border-gray-300 rounded p-4 flex flex-col gap-y-4">
       <div className="text-center text-primary ">
         <p>Enjoy</p>
         <h1 className="text-xl uppercase font-semibold mb-2">our service</h1>
-        <Seperator />
+        <Separator />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-10">
@@ -24,12 +25,7 @@ export const OurSerive = () => {
         ))}
       </div>
       <div className="flex items-center justify-center gap-4 mt-4">
-        <button className="px-6 py-2 bg-yellow-500 hover:bg-yellow-600 transition font-medium text-white">
-          Current
-        </button>
-        <button className="px-6 py-2 bg-primary hover:bg-red-500 transition font-medium text-white">
-          Next
-        </button>
+        <Button className="bg-[#004a46] hover:bg-[#00504c] ">See More</Button>
       </div>
     </div>
   );

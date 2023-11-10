@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
-import { Seperator } from "../ui/seperator";
+import { Separator } from "../ui/separator";
 
 export const Quote = () => {
   return (
-    <div className="w-full px-4 py-6 bg-primary rounded flex flex-col md:flex-row items-center text-white justify-between gap-10 ">
+    <div className="w-full p-4 md:py-8 md:px-10 bg-primary rounded flex flex-col md:flex-row items-center text-white justify-evenly gap-8 ">
       <div className="flex-1 ">
-        <div className="relative h-[320px] w-[320px] rounded-full overflow-hidden ">
+        <div className="relative h-[420px] w-[420px] rounded-full overflow-hidden ">
           <Image
-            src="https://plus.unsplash.com/premium_photo-1682090795093-9b9434a455ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2VkZGluZyUyMGluJTIwaGluZHV8ZW58MHx8MHx8fDA%3D"
+            src="https://plus.unsplash.com/premium_photo-1682092018999-2c8fcfe944f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2VkZGluZyUyMGhpbmR1fGVufDB8fDB8fHww"
             fill
             objectFit="cover"
             alt="image"
@@ -16,13 +16,13 @@ export const Quote = () => {
         </div>
       </div>
 
-      <div className="sm:w-[70%] lg:w-[50%] flex flex-col gap-y-6 ">
+      <div className="sm:w-[70%] lg:w-[50%] flex flex-col gap-y-2 ">
         <div className="flex flex-col gap-y-1 text-center">
           <h1 className="font-semibold text-xl">
             What <span className="uppercase">loves gives</span>
           </h1>
 
-          <Seperator color="border-white" />
+          <Separator color="border-white" />
         </div>
 
         <div className="">

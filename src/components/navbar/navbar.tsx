@@ -5,7 +5,7 @@ import { NavTop } from "./nav-top";
 
 export const Navbar = () => {
   return (
-    <div className="w-full space-y-2">
+    <div className="w-full">
       {/* nav upper */}
 
       <NavTop />

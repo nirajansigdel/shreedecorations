@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 export const Connect = () => {
   return (
     <div className="  w-full   h-[480px] rounded overflow-hidden   bg-[url('https://images.pexels.com/photos/18897196/pexels-photo-18897196/free-photo-of-indian-wedding-ceremony-with-petals.jpeg?auto=compress&cs=tinysrgb&w=300')]  ">
@@ -11,10 +12,10 @@ export const Connect = () => {
             lets celebrate your love
           </p>
 
-          <button className="px-6 py-4 rounded-lg bg-primary text-lg font-semibold text-white hover:bg-red-500 transition ">
+          <Button size="lg" className="hover:bg-red-500 font-semibold text-lg ">
             {" "}
             Lets Connect
-          </button>
+          </Button>
         </div>
       </div>
     </div>
