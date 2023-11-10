@@ -8,7 +8,7 @@ import ImageModal from "../ImageModal";
 
 export const OurWork = () => {
   const [openImageModal, setOpenImageModal] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState("");
 
   return (
     <div className="flex flex-col gap-y-6">
