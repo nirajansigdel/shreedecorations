@@ -46,7 +46,7 @@ const socialMedias = [
 export const NavTop = () => {
   return (
     <div className="bg-primary px-6">
-      <div className="hidden md:flex  md:h-[70px]  w-full py-2 mt-4  flex-col md:flex-row items-center justify-between  text-white max-w-[1560px] mx-auto">
+      <div className="hidden md:flex  md:h-[70px]  w-full py-2 mt-4  flex-col md:flex-row items-center justify-between  text-white max-w-[1440px] mx-auto">
         <div className="flex items-center justify-center gap-x-2 md:gap-x-4">
           {officeInfos.map((info) => (
             <div
