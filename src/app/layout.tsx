@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <div className="flex flex-col  h-screen w-full">
           <Navbar />
-          <div className="w-full max-w-[1560px] flex-1 mx-auto px-6  ">
+          <div className="w-full max-w-[1440px] flex-1 mx-auto px-6  ">
             <EdgeStoreProvider>{children}</EdgeStoreProvider>
             <Footer />{" "}
           </div>

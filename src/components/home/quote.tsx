@@ -19,13 +19,13 @@ export const Quote = () => {
       <div className="sm:w-[70%] lg:w-[50%] flex flex-col gap-y-2 ">
         <div className="flex flex-col gap-y-1 text-center">
           <h1 className="font-semibold text-xl">
-            What <span className="uppercase">loves gives</span>
+             <span className="uppercase">What loves gives</span>
           </h1>
 
           <Separator color="border-white" />
         </div>
 
-        <div className="">
+        <div className="w-4/5">
           <p>
             “The real act of marriage takes place in the heart, not in the
             ballroom or church or synagogue. It’s a choice you make not just on

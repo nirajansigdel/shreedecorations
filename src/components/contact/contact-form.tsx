@@ -11,8 +11,8 @@ import { ContactInfo } from "./contact-info";
 export const ContactForm = () => {
   return (
     <div className="flex flex-col md:flex-row gap-10 w-full  items-center md:justify-between mt-6">
-      <div className="flex flex-col gap-y-6 w-full  ">
-        <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-4 w-full  ">
+        <div className="flex flex-col gap-y-1">
           <Label htmlFor="name" className="font-semibold">
             Full name
           </Label>
@@ -23,7 +23,7 @@ export const ContactForm = () => {
           <Label htmlFor="number" className="font-semibold">
             Contact number
           </Label>
-          <Input name="number" type="number" placeholder="Phone number" />
+          <Input name="number" type="number" placeholder="Contact number" />
         </div>
 
         <div className="flex flex-col gap-y-2">
@@ -53,7 +53,7 @@ export const ContactForm = () => {
         </button>
       </div>
 
-      <div className="flex flex-col gap-y-6 w-full bg-[#13605C] rounded p-4">
+      <div className="flex flex-col gap-y-8 w-full bg-[#13605C] rounded p-4">
         <p className="text-sm">
           Feel free to connect with us through the contact details provided
           below for any type of enquiry or to establish a connection. We are
@@ -64,11 +64,11 @@ export const ContactForm = () => {
           <p className="text-lg font-medium">Contact</p>
           <div className="flex flex-col gap-y-2">
             <ContactInfo
-              title="817 715 3823"
+              title="+571 474 9074"
               icon={<AiOutlinePhone className="w-5 h-5" />}
             />
             <ContactInfo
-              title="cksoli66@gmail.com"
+              title="ushree000@gmail.com"
               icon={<HiOutlineMail className="w-5 h-5" />}
             />
           </div>
@@ -78,10 +78,10 @@ export const ContactForm = () => {
           <p className="text-lg font-medium">Location</p>
           <div className="flex flex-col gap-y-2">
             <ContactInfo
-              title="Fourth worth dallas"
+              title="Aldie Virginia 20105,USA"
               icon={<IoLocationOutline className="w-5 h-5" />}
             />
-            <ContactInfo title="North road 435673Kth street" />
+            <ContactInfo title=" 42011 bushclover terrace " />
           </div>
         </div>
       </div>

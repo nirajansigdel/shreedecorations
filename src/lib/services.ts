@@ -1,7 +1,7 @@
 export const services = [
   {
     href: "/",
-    title: "Mirrage",
+    title: "Weeding",
     src: "https://images.unsplash.com/photo-1677696049440-0d5ff1fb04b1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
@@ -36,7 +36,31 @@ export const services = [
   },
   {
     href: "/",
-    title: "Pasni",
+    title: "Pasni & Nwaran",
     src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
   },
+  {
+    href: "/",
+    title: "Sweet 16",
+    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
+  },
+  {
+    href: "/",
+    title: "Meditation",
+    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
+  },
+  {
+    href: "/",
+    title: "Rental",
+    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
+  },
+  {
+    href: "/",
+    title: "Other Service",
+    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
+  },
+ 
+  
+  
+
 ];

@@ -9,19 +9,19 @@ import Link from "next/link";
 const officeInfos = [
   {
     icon: <HiOutlineMail className="w-4 h-4 md:w-5 md:h-5 font-medium " />,
-    title: "decore123@gmail.com",
+    title: "ushree000@gmail.com",
   },
   {
     icon: (
       <LiaPhoneVolumeSolid className="w-4 h-4 md:w-5 md:h-5 font-medium " />
     ),
-    title: "+977 0000000000",
+    title: "+571 474 9074",
   },
   {
     icon: (
       <HiOutlineLocationMarker className=" w-4 h-4 md:w-5 md:h-5 font-medium " />
     ),
-    title: "Kathmandu, Nepal",
+    title: "Aldie Virginia 20105 ,USA",
   },
 ];
 
