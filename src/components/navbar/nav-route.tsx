@@ -52,32 +52,6 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
       )}
     >
       {navRoutes.map((route) => {
-        if (route.label === "service")
-          return (
-            <Link
-              role="button"
-              activeClass="active"
-              to={route.label}
-              spy={true}
-              smooth={true}
-              duration={100}
-              className={cn(
-                isNavbar &&
-                  "text-gray-600 hover:text-primary transition hover:underline",
-                pathname === route.href &&
-                  isNavbar &&
-                  " text-primary underline",
-                isMobile &&
-                  " p-2 rounded-md text-center text-gray-600 hover:bg-muted  hover:text-primary transition",
-
-                pathname === route.href && isMobile && "text-primary bg-muted"
-              )}
-            >
-              {" "}
-              {route.title}
-            </Link>
-          );
-
         return (
           <div
             role="button"
