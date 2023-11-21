@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar/navbar";
 import { Footer } from "@/components/footer/footer";
+import { Toaster } from "@/components/ui/toaster";
 
 import { EdgeStoreProvider } from "../lib/edgestore";
 
@@ -30,9 +31,10 @@ export default function RootLayout({
           <Navbar />
           <div className="w-full max-w-[1440px] flex-1 mx-auto px-6  ">
             <EdgeStoreProvider>{children}</EdgeStoreProvider>
-            <Footer />{" "}
+            <Footer />
           </div>
         </div>
+        <Toaster />
       </body>
     </html>
   );

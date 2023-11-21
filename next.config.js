@@ -8,7 +8,12 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ["images.unsplash.com", "unsplash.com", "plus.unsplash.com"],
+    domains: [
+      "images.unsplash.com",
+      "unsplash.com",
+      "plus.unsplash.com",
+      "res.cloudinary.com",
+    ],
   },
 };
 

@@ -38,7 +38,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
-import { addImageToAlbum, createFolder } from "../../components/action";
+import {
+  addImageToAlbum,
+  createFolder,
+  getPicsFromFolder,
+} from "../../components/action";
+import { useToast } from "@/components/ui/use-toast";
 
 const FormSchema = z.object({
   album: z.string({
@@ -47,6 +52,7 @@ const FormSchema = z.object({
 });
 
 function SingleImageDropzoneUsage() {
+  const { toast } = useToast();
   const [imageId, setImageId] = useState("");
   const [open, setOpen] = useState(false);
   const [album, setAlbum] = useState("");
@@ -77,7 +83,7 @@ function SingleImageDropzoneUsage() {
             <DialogHeader>
               <DialogTitle>Upload Image</DialogTitle>
               <DialogDescription>
-                Upload pictures here. Click upload when you're done.
+                Upload pictures here. Click upload when you are done.
               </DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-4">
@@ -146,11 +152,16 @@ function SingleImageDropzoneUsage() {
         {album && (
           <CldUploadButton
             className="px-4 py-2 rounded-md border-2 border-red-800"
-            uploadPreset="uuubxijp"
+            uploadPreset="xkvposh1"
             onUpload={(result) => {
-              setImageId(result.info.public_id);
+              if (result) {
+                setImageId(result.info?.public_id);
+                toast({
+                  title: "Image Uploaded",
+                });
 
-              addImageToAlbum(result.info.public_id, album);
+                addImageToAlbum(result.info.public_id, album);
+              }
             }}
           />
         )}
