@@ -16,8 +16,8 @@ export const services = [
   },
   {
     href: "/",
-    title: "Sweet 16",
-    src: "/services/sweet16.png",
+    title: "Baby Shower",
+    src: "/services/babyshower.png",
   },
   {
     href: "/",
@@ -42,21 +42,16 @@ export const services = [
   {
     href: "/",
     title: "Sweet 16",
-    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
-  },
-  {
-    href: "/",
-    title: "Meditation",
-    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
+    src: "/services/sweet16.png",
   },
   {
     href: "/",
     title: "Rental",
-    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
+    src: "/services/rental.png",
   },
   {
     href: "/",
     title: "Other Service",
-    src: "https://images.unsplash.com/photo-1503463168353-9d883c7f5255?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxiYWJ5JTIwcHVqYXxlbnwwfHwwfHx8MA%3D%3D",
+    src: "/services/other.png",
   },
 ];
