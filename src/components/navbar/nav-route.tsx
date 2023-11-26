@@ -18,6 +18,7 @@ const navRoutes = [
   {
     title: "Gallery",
     href: "/gallery",
+    disable: true,
   },
   {
     title: "About us",
@@ -58,9 +59,8 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
             onClick={() => onClick(route.title, route.href)}
             key={route.title}
             className={cn(
-              isNavbar &&
-                "text-gray-600 hover:text-primary transition hover:underline",
-              pathname === route.href && isNavbar && " text-primary underline",
+              isNavbar && "text-gray-600 hover:text-primary transition ",
+              pathname === route.href && isNavbar && " text-primary ",
               isMobile &&
                 " p-2 rounded-md text-center text-gray-600 hover:bg-muted  hover:text-primary transition",
 
@@ -71,7 +71,7 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
               <GalleryPopover key="gallery">
                 <div className="">{route.title}</div>
               </GalleryPopover>
-            ) : (
+            ) : route.title == "Gallery" && isFooter ? null : (
               <>{route.title}</>
             )}
           </div>
