@@ -20,19 +20,19 @@ export const GalleryPopover = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <Popover open={isOpen}>
-      <PopoverTrigger asChild onClick={() => setIsOpen(true)}>
-        {children}
-      </PopoverTrigger>
+    <Popover>
+      <PopoverTrigger asChild>{children}</PopoverTrigger>
       <PopoverContent className="p-4 grid grid-cols-3 gap-y-2  gap-x-8 w-full bg-primary text-white border-primary">
         {contents.map((content) => (
           <div
             role="button"
             className=" capitalize truncate p-2 w-full hover:bg-red-400/50 transition  rounded-md"
-            key={content}
-            onClick={() => onClick(content)}
+            key={content.link}
+            onClick={() => {
+              onClick(content.link);
+            }}
           >
-            {content}
+            {content.name}
           </div>
         ))}
       </PopoverContent>

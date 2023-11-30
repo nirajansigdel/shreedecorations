@@ -38,8 +38,9 @@ const GallerySlugPage = ({
 
     fetchData();
   }, [params.gallerySlug]);
+
   const isGallery = contents.find(
-    (contents) => contents === params.gallerySlug.replace("%20", " ")
+    (contents) => contents.link === params.gallerySlug.replace("%20", " ")
   );
 
   if (!isGallery) return redirect("/not-found");
