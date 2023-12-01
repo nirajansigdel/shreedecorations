@@ -20,13 +20,6 @@ export const NavLow = () => {
       </div>
 
       <div className="flex gap-x-2 items-center">
-        <div
-          role="button"
-          className="w-10 h-10 bg-gradient-to-b from-primary to-slate-100 rounded-full flex items-center justify-center hover:bg-primary/80 transition"
-        >
-          {/* <span className="flex font-extralight">LOGO</span> */}
-        </div>
-
         <div className="md:hidden">
           <NavMobile />
         </div>

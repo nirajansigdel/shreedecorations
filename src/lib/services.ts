@@ -42,7 +42,7 @@ export const services = [
   {
     href: "/",
     title: "Sweet 16",
-    src: "/services/sweet16.png",
+    src: "/services/sweet16.jpg",
   },
   {
     href: "/",
