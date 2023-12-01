@@ -8,7 +8,10 @@ import { NavRoutes } from "./nav-route";
 export const NavMobile = () => {
   return (
     <Sheet>
-      <SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition">
+      <SheetTrigger
+        asChild
+        className="md:hidden pr-4 hover:opacity-75 transition"
+      >
         <AiOutlineMenu className="w-6 h-6" />
       </SheetTrigger>
       <SheetContent side="left" className=" bg-white flex flex-col  gap-y-10 ">

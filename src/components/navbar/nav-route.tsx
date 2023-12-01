@@ -18,7 +18,7 @@ const navRoutes = [
   {
     title: "Gallery",
     href: "/gallery",
-    disable: true,
+    disable: false,
   },
   {
     title: "About us",
@@ -40,7 +40,6 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
   const router = useRouter();
 
   const onClick = (name: string, href: string) => {
-    if (name === "Gallery") return;
     router.push(href);
   };
 
@@ -71,7 +70,9 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
               <GalleryPopover key="gallery">
                 <div className="">{route.title}</div>
               </GalleryPopover>
-            ) : route.title == "Gallery" && isFooter ? null : (
+            ) : route.title == "Gallery" && isFooter ? (
+              <>{route.title}</>
+            ) : (
               <>{route.title}</>
             )}
           </div>
