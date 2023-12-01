@@ -60,7 +60,7 @@ export const GalleryPopover = ({ children }: { children: React.ReactNode }) => {
         </MenubarTrigger>
         <MenubarContent className="w-[500px] grid grid-cols-3 absolute left-[-150px]">
           {contents.map((content) => (
-            <MenubarItem>
+            <MenubarItem key={content.name}>
               <span
                 role="button"
                 className=" capitalize truncate p-2 w-full  transition  rounded-md"
