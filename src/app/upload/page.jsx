@@ -107,10 +107,10 @@ function SingleImageDropzoneUsage() {
                           <SelectContent className="border w-full">
                             <SelectGroup>
                               <SelectItem value="Wedding">Wedding</SelectItem>
-                              <SelectItem value="Marriage">Marriage</SelectItem>
-                              <SelectItem value="Meditation Class">
+                              {/* <SelectItem value="Marriage">Marriage</SelectItem> */}
+                              {/* <SelectItem value="Meditation Class">
                                 Meditation Class
-                              </SelectItem>
+                              </SelectItem> */}
                               <SelectItem value="Rental Services">
                                 Rental Services
                               </SelectItem>
