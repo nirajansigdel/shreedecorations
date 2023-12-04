@@ -19,17 +19,19 @@ function Page() {
 
   return (
     <div className="border-2 h-full rounded-md flex">
-      <div className="w-full p-2 gap-4 grid grid-cols-3">
+      <div className="w-full h-full p-2 gap-4 grid grid-cols-3">
         <div
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img2);
           }}
+          style={{ height: "520px" }}
           className="relative w-full border h-[120px] rounded-lg bg-red-300 group-hover:border border-black transition overflow-hidden"
         >
           <Image src={Img2} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img1);
@@ -39,6 +41,7 @@ function Page() {
           <Image src={Img1} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img3);
@@ -48,6 +51,7 @@ function Page() {
           <Image src={Img3} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img4);
@@ -57,6 +61,7 @@ function Page() {
           <Image src={Img4} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img5);
@@ -66,6 +71,7 @@ function Page() {
           <Image src={Img5} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img6);
@@ -75,6 +81,7 @@ function Page() {
           <Image src={Img6} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img7);
@@ -84,6 +91,7 @@ function Page() {
           <Image src={Img7} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img8);
@@ -93,6 +101,7 @@ function Page() {
           <Image src={Img8} alt="image1" layout="fill" objectFit="cover" />
         </div>
         <div
+          style={{ height: "520px" }}
           onClick={() => {
             setOpenImageModal(true);
             setSelectedImage(Img9);
