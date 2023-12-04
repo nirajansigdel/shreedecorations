@@ -23,7 +23,7 @@ export const Connect = () => {
             size="lg"
             className="hover:bg-red-500 font-semibold text-lg "
           >
-            Connect Us
+            Let's Connect
           </Button>
         </div>
       </div>

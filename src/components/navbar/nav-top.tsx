@@ -34,7 +34,7 @@ const socialMedias = [
   {
     id: 2,
     icon: <AiFillInstagram className="w-5 h-5 md:w-8 md:h-8" />,
-    link: "https://www.facebook.com/people/Shree-Auspicious-Decoration/61552178642930/?mibextid=LQQJ4d",
+    link: "https://instagram.com/shreeauspiciousdecoration?igshid=OGQ5ZDc2ODk2ZA==",
   },
   {
     id: 3,

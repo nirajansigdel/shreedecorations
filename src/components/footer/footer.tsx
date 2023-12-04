@@ -15,18 +15,18 @@ const socialMedias = [
   {
     id: 2,
     icon: <AiFillInstagram className="w-7 h-7 md:w-10 md:h-10" />,
-    link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
+    link: "https://instagram.com/shreeauspiciousdecoration?igshid=OGQ5ZDc2ODk2ZA==",
   },
   {
     id: 3,
     icon: <AiFillYoutube className="w-7 h-7 md:w-10 md:h-10" />,
     link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
   },
-  {
-    id: 4,
-    icon: <FaTiktok className="w-5 h-5 md:w-8 md:h-8" />,
-    link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
-  },
+  // {
+  //   id: 4,
+  //   icon: <FaTiktok className="w-5 h-5 md:w-8 md:h-8" />,
+  //   link: "https://www.youtube.com/watch?v=ZugxJqbiMo0&list=PL9r_RvNjFlEZgT5KhPxjswtLBPZbP6Wqx",
+  // },
 ];
 
 const navRoutes = [

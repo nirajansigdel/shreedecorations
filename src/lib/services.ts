@@ -17,7 +17,7 @@ export const services = [
   {
     href: "/",
     title: "Baby Shower",
-    src: "/services/babyshower.png",
+    src: "/services/Babyshower.jpg",
   },
   {
     href: "/",

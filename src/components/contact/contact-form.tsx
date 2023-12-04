@@ -78,10 +78,10 @@ export const ContactForm = () => {
           <p className="text-lg font-medium">Location</p>
           <div className="flex flex-col gap-y-2">
             <ContactInfo
-              title="Aldie Virginia 20105,USA"
+              title="42011 bushclover terrace"
               icon={<IoLocationOutline className="w-5 h-5" />}
             />
-            <ContactInfo title=" 42011 bushclover terrace " />
+            <ContactInfo title=" Aldie Virginia 20105,USA " />
           </div>
         </div>
       </div>
