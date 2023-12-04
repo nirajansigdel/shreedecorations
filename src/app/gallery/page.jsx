@@ -12,14 +12,19 @@ import Img8 from "./(pics)/img8.jpg";
 import Img9 from "./(pics)/img9.jpg";
 
 import ImageModal from "../../components/ImageModal";
+import { Separator } from "@/components/ui/separator";
 
 function Page() {
   const [openImageModal, setOpenImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div className="border-2 h-full rounded-md flex">
-      <div className="w-full h-full p-2 gap-4 grid grid-cols-3">
+    <div className="border-2 h-full rounded-md flex flex-col">
+      <div style={{ padding: "30px 0" }} className="text-center text-primary ">
+        <h1 className="text-xl uppercase font-semibold mb-2">our Gallery</h1>
+        <Separator />
+      </div>
+      <div className="w-full h-full p-2 gap-4 grid sm:grid-cols-2 lg:grid-cols-3">
         <div
           onClick={() => {
             setOpenImageModal(true);
