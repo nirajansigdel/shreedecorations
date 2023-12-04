@@ -40,7 +40,7 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
   const router = useRouter();
 
   const onClick = (name: string, href: string) => {
-    if (name == "Gallery") return;
+    if (name == "Gallery" && !isFooter) return;
     router.push(href);
   };
 
@@ -60,7 +60,7 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
             key={route.title}
             className={cn(
               isNavbar && "text-gray-600 hover:text-primary transition ",
-              pathname === route.href && isNavbar && " text-primary ",
+              pathname == route.href && isNavbar && " text-primary ",
               isMobile &&
                 " p-2 rounded-md text-center text-gray-600 hover:bg-muted  hover:text-primary transition",
 
