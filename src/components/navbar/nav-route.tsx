@@ -17,7 +17,7 @@ const navRoutes = [
   },
   {
     title: "Gallery",
-    href: "/gallery",
+    href: "/",
     disable: false,
   },
   {
@@ -40,6 +40,7 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
   const router = useRouter();
 
   const onClick = (name: string, href: string) => {
+    if (name == "Gallery") return;
     router.push(href);
   };
 
