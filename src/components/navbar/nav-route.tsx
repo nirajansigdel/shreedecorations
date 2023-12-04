@@ -17,7 +17,7 @@ const navRoutes = [
   },
   {
     title: "Gallery",
-    href: "/",
+    href: "/gallery",
     disable: false,
   },
   {
