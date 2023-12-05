@@ -40,7 +40,7 @@ export const NavRoutes = ({ isFooter, isMobile, isNavbar }: NavRoutesProps) => {
   const router = useRouter();
 
   const onClick = (name: string, href: string) => {
-    if (name == "Gallery" && !isFooter) return;
+    if (name == "Gallery" && !isFooter && !isMobile) return;
     router.push(href);
   };
 

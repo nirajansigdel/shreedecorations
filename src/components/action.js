@@ -33,7 +33,9 @@ export async function getAlbums(album) {
 }
 
 export async function getPicsFromFolder(folderName) {
+  console.log({ folderName });
   const { folders } = await cloudinary.v2.api.root_folders();
+  console.log({ folders });
   const filter = folders.filter((folder) => folder.name == folderName);
 
   if (filter) {
@@ -43,6 +45,7 @@ export async function getPicsFromFolder(folderName) {
       .with_field("tags")
       .max_results(30)
       .execute();
+    console.log({ pictures });
     if (pictures.resources) {
       return pictures.resources;
     }

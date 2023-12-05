@@ -111,23 +111,26 @@ function SingleImageDropzoneUsage() {
                               {/* <SelectItem value="Meditation Class">
                                 Meditation Class
                               </SelectItem> */}
-                              <SelectItem value="Rental Services">
+                              <SelectItem value="Rental-Services">
                                 Rental Services
                               </SelectItem>
                               <SelectItem value="Anniversary">
                                 Anniversary
                               </SelectItem>
                               <SelectItem value="Birthday">Birthday</SelectItem>
-                              <SelectItem value="Sweet 16">Sweet 16</SelectItem>
+                              <SelectItem value="Sweet-16">Sweet 16</SelectItem>
                               <SelectItem value="Pasni">Pasni</SelectItem>
-                              <SelectItem value="Gunau Choli">
+                              <SelectItem value="Gunau-Choli">
                                 Gunau Choli
                               </SelectItem>
                               <SelectItem value="Bratabandha">
                                 Bratabandha
                               </SelectItem>
                               <SelectItem value="Puja">Puja</SelectItem>
-                              <SelectItem value="Other Service">
+                              <SelectItem value="Baby-Shower">
+                                Baby Shower
+                              </SelectItem>
+                              <SelectItem value="Other-Service">
                                 Other Service
                               </SelectItem>
                             </SelectGroup>
