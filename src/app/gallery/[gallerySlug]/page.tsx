@@ -143,7 +143,7 @@ const GallerySlugPage = ({
                 </AlertDialogFooter>
               </AlertDialogContent>
             </AlertDialog>
-            <button
+            {/* <button
               className="absolute top-[10px] right-[20px] bg-gray-200 rounded-full p-1 "
               onClick={async (e) => {
                 e.stopPropagation();
@@ -153,7 +153,7 @@ const GallerySlugPage = ({
               }}
             >
               <CiTrash className="w-4 h-4" />
-            </button>
+            </button> */}
           </div>
         ))}
       </div>
