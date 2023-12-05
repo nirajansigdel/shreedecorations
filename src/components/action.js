@@ -53,3 +53,10 @@ export async function getPicsFromFolder(folderName) {
   }
   return filter;
 }
+
+export async function deletePics(asset_id) {
+  const res = await cloudinary.v2.uploader.destroy(asset_id, {
+    resource_type: "image",
+  });
+  return res;
+}
