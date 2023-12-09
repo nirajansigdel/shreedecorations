@@ -88,7 +88,8 @@ const GallerySlugPage = ({
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6 mt-8">
         {images.map((image) => (
           <div
-            className="relative"
+            style={{ height: "520px" }}
+            className="relative w-full border h-[120px] rounded-lg bg-red-300 group-hover:border border-black transition overflow-hidden"
             key={image?.public_id}
             onClick={(e) => {
               e.stopPropagation();
@@ -98,8 +99,8 @@ const GallerySlugPage = ({
           >
             <CldImage
               alt="image"
-              width="600"
-              height="600"
+              layout="fill"
+              objectFit="cover"
               src={image?.public_id}
             />
             <AlertDialog open={openModal} onOpenChange={setOpenModal}>
