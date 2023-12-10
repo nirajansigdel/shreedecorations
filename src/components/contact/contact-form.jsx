@@ -156,7 +156,7 @@ function ContactForm() {
           <p className="text-lg font-medium">Location</p>
           <div className="flex flex-col gap-y-2">
             <ContactInfo
-              title="42011 bushclover terrace"
+              title="42011 Bushclover Terrace"
               // icon={<IoLocationOutline className="w-5 h-5" />}
             />
             <ContactInfo title=" Aldie Virginia 20105,USA " />

@@ -119,7 +119,9 @@ function SingleImageDropzoneUsage() {
                               </SelectItem>
                               <SelectItem value="Birthday">Birthday</SelectItem>
                               <SelectItem value="Sweet-16">Sweet 16</SelectItem>
-                              <SelectItem value="Pasni">Pasni</SelectItem>
+                              <SelectItem value="Pasni-Nwaran">
+                                Pasni
+                              </SelectItem>
                               <SelectItem value="Gunau-Choli">
                                 Gunau Choli
                               </SelectItem>
