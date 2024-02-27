@@ -1,7 +1,7 @@
 export const services = [
   {
     href: "/",
-    title: "Weeding",
+    title: "Wedding",
     src: "/services/wedding.png",
   },
   {
